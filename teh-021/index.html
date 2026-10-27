@@ -1,367 +1,540 @@
 <!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex,nofollow"><title>Apple_pro — магазин электроники, Иркутск, улица Степана Разина, 5</title><meta name="description" content="Магазин электроники, товары для мобильных телефонов, салон связи. Цены из прайса — ниже. Иркутск, улица Степана Разина, 5. Телефон, часы работы и маршрут.">
-<meta name="theme-color" content="#ffffff">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>/* Hallmark · macrostructure: Storefront (витрина + каталог + контакты) · tone: technical-retail · anchor hue: lime 125°
- * nav: N1b store header (лого · поиск · телефон · список) + mobile tab bar · catalog: chips + sort + product grid · cta: list → WhatsApp · footer: Ft4 dense
- * theme: custom (vibe: "витрина электроники, графит, стекло, лаймовый ценник") · paper oklch(97.5% 0.004 260) · accent oklch(88% 0.19 125)
- * fonts: Unbounded + Onest · axes: light+dark-banner / geometric-wide / chromatic-lime · pre-emit critique: P4 H5 E4 S5 R4 V5 */
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<script>document.documentElement.classList.add('js')</script>
+<title>Apple Pro — iPhone в Иркутске, улица Степана Разина, 5</title>
+<meta name="description" content="Apple Pro: магазин iPhone на улице Степана Разина, 5 в Иркутске. iPhone от 11 Pro Max до 15 по ценам из прайса, проверка по серийному номеру при покупке. Ежедневно 10:00–20:00, рейтинг 5,0 на Яндекс Картах.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Apple Pro">
+<meta property="og:title" content="Apple Pro — iPhone в Иркутске">
+<meta property="og:description" content="iPhone по ценам из прайса, проверка по серийнику при покупке. Иркутск, улица Степана Разина, 5.">
+<meta property="og:url" content="https://tikhonov565-lgtm.github.io/russia-tehnika-demo/teh-021/">
+<meta property="og:image" content="https://tikhonov565-lgtm.github.io/russia-tehnika-demo/teh-021/img/03-800.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f8f6fb">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%235a3d86'/%3E%3Ccircle cx='16' cy='16' r='9.5' fill='none' stroke='%23fff' stroke-width='1.6' stroke-dasharray='0 3' stroke-linecap='round'/%3E%3Ctext x='16' y='20.4' font-family='Georgia,serif' font-size='12' text-anchor='middle' fill='%23fff'%3EAP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* палитра с логотипа магазина: фиолетовое кольцо из точек и засечный шрифт «Apple Pro», лиловые стикеры APPLE_PRO38 на коробках */
 :root{
-  --color-paper:oklch(97.5% 0.004 260);--color-paper-2:oklch(94.5% 0.006 260);--color-well:oklch(95.5% 0.007 255);--color-card:oklch(100% 0 0);
-  --color-ink:oklch(19% 0.02 265);--color-ink-2:oklch(46% 0.018 265);--color-ink-3:oklch(62% 0.014 265);--color-rule:oklch(90.5% 0.008 260);
-  --color-night:oklch(18% 0.022 265);--color-night-2:oklch(25% 0.026 265);--color-night-line:oklch(34% 0.025 265);
-  --color-on-night:oklch(97% 0.005 260);--color-on-night-2:oklch(77% 0.014 260);
-  --color-accent:oklch(88% 0.19 125);--color-accent-2:oklch(93% 0.16 122);--color-accent-ink:oklch(47% 0.13 135);--color-on-accent:oklch(19% 0.03 130);
-  --color-ok:oklch(80% 0.17 150);--color-ok-ink:oklch(50% 0.13 150);--color-closed:oklch(74% 0.12 40);--color-closed-ink:oklch(52% 0.14 40);
-  --color-demo:oklch(12% 0.015 265);--color-on-demo:oklch(84% 0.01 260);--color-scrim:oklch(15% 0.02 265 / .55);--color-focus:oklch(62% 0.2 262);
-  --font-display:"Unbounded",system-ui,sans-serif;--font-body:"Onest",system-ui,sans-serif;
-  --space-2xs:4px;--space-xs:8px;--space-sm:12px;--space-md:16px;--space-lg:24px;--space-xl:40px;--space-2xl:64px;
-  --text-2xs:0.6875rem;--text-xs:0.8125rem;--text-sm:0.875rem;--text-base:1rem;--text-lg:1.125rem;--text-xl:1.375rem;--text-2xl:clamp(1.375rem,4.6vw,2rem);
-  --text-display:clamp(1.5rem,7.6vw,3.25rem);
-  --radius:12px;--radius-lg:20px;--radius-xl:28px;--ease-out:cubic-bezier(.2,.7,.2,1);--dur:160ms;--hdr-h:61px;--tabs-h:68px;
+  --bg:#f8f6fb;--bg-2:#efebf5;--panel:#fff;
+  --line:#e7e2ef;--line-2:#d6cfe2;
+  --ink:#1c1a22;--ink-2:#575261;--ink-3:#8a8494;
+  --plum:#5a3d86;--plum-2:#7a5aa8;--plum-soft:#efe8f8;
+  --night:#1e1828;--night-2:#2a2236;--night-line:#3a3148;--on-night:#f2eff7;--on-night-2:#aea6bd;
+  --ok:#2f9e5b;
+  --f-d:'Lora',Georgia,serif;--f-b:'Onest',system-ui,sans-serif;
+  --gut:16px;--max:1180px;--r:14px;--r-lg:22px;
+  --ease:cubic-bezier(.2,.7,.2,1);
 }
 *,*::before,*::after{box-sizing:border-box}
-html,body{overflow-x:clip}
-html{-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--hdr-h) + var(--space-md))}
-body{margin:0;background:var(--color-paper);color:var(--color-ink);font:400 var(--text-base)/1.55 var(--font-body);padding-bottom:calc(var(--tabs-h) + env(safe-area-inset-bottom))}
-h1,h2,h3{font-family:var(--font-display);font-style:normal;font-weight:600;line-height:1.12;margin:0;overflow-wrap:anywhere;min-width:0;letter-spacing:-.015em}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--f-b);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{display:block;max-width:100%;height:auto}
 a{color:inherit}
-button{font:inherit;color:inherit}
-:focus-visible{outline:2px solid var(--color-focus);outline-offset:2px}
-[hidden]{display:none !important}
-.wrap{max-width:1200px;margin:0 auto;padding:0 var(--space-md)}
-.demo{background:var(--color-demo);color:var(--color-on-demo);font-size:var(--text-xs);text-align:center;padding:6px var(--space-md)}
+h1,h2,h3{margin:0;font-family:var(--f-d);font-weight:500;letter-spacing:-.02em;line-height:1.08}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+:focus-visible{outline:2px solid var(--plum-2);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.lbl{font:600 11.5px/1.2 var(--f-b);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:44px;z-index:99;background:var(--panel);padding:8px 14px}
+.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* демо-плашка */
+.demo{background:var(--night);color:var(--on-night-2);font:500 12.5px/1.4 var(--f-b);text-align:center;padding:8px var(--gut)}
+.demo b{color:var(--on-night);font-weight:600}
+
+/* знак: кольцо из точек, как на логотипе */
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none;margin-right:auto;min-width:0;color:var(--plum)}
+.logo svg{flex:none}
+.logo b{display:block;font:500 22px/1 var(--f-d);letter-spacing:-.01em;color:var(--ink)}
+.logo span{display:block;margin-top:4px;font:500 11.5px/1 var(--f-b);color:var(--ink-3);white-space:nowrap}
+
 /* шапка */
-.hdr{position:sticky;top:0;z-index:20;background:var(--color-card);border-bottom:1px solid var(--color-rule)}
-.hdr .row{display:flex;align-items:center;gap:var(--space-xs);min-height:60px}
-.logo{font:600 var(--text-lg)/1.15 var(--font-display);letter-spacing:-.01em;text-decoration:none;margin-right:auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.ibtn{position:relative;flex:none;width:44px;height:44px;border-radius:999px;display:inline-grid;place-items:center;background:var(--color-paper-2);color:var(--color-ink);text-decoration:none;border:0;cursor:pointer;transition:background-color var(--dur) var(--ease-out)}
-.ibtn:hover{background:var(--color-rule)}
-.ibtn.acc{background:var(--color-accent);color:var(--color-on-accent)}
-.ibtn.acc:hover{background:var(--color-accent-2)}
-.badge{position:absolute;top:-3px;right:-3px;min-width:20px;height:20px;padding:0 5px;border-radius:999px;background:var(--color-ink);color:var(--color-card);font:700 var(--text-2xs)/20px var(--font-body);text-align:center;font-variant-numeric:tabular-nums}
-.hdr .hsearch,.htel,.hnav{display:none}
-.search{display:flex;align-items:center;gap:var(--space-xs);background:var(--color-paper-2);border:1.5px solid transparent;border-radius:999px;padding:0 var(--space-2xs) 0 var(--space-md);min-height:48px;transition:border-color var(--dur) var(--ease-out),background-color var(--dur) var(--ease-out)}
-.search:hover{border-color:var(--color-rule)}
-.search:focus-within{border-color:var(--color-ink);background:var(--color-card)}
-.search>svg{flex:none;color:var(--color-ink-2)}
-.search input{flex:1;min-width:0;min-height:44px;border:0;background:none;font:inherit;color:var(--color-ink);outline:none}
-.search input::placeholder{color:var(--color-ink-3)}
-.search button{flex:none;min-height:40px;padding:0 var(--space-md);border:0;border-radius:999px;background:var(--color-ink);color:var(--color-card);font-weight:600;cursor:pointer}
-/* нижняя панель на телефоне */
-.tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:var(--space-2xs);background:var(--color-card);border-top:1px solid var(--color-rule);padding:6px var(--space-xs) calc(6px + env(safe-area-inset-bottom))}
-.tabs a,.tabs button{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:54px;border:0;border-radius:14px;background:none;font-size:var(--text-2xs);font-weight:500;color:var(--color-ink-2);text-decoration:none;cursor:pointer}
-.tabs [aria-current]{color:var(--color-ink);background:var(--color-paper-2)}
-.tabs .acc{background:var(--color-accent);color:var(--color-on-accent);font-weight:600}
-.tabs .badge{top:4px;right:calc(50% - 22px)}
-/* общие блоки */
-main{display:block}
-section{padding-top:var(--space-2xl)}
-.head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:var(--space-xs) var(--space-md);margin-bottom:var(--space-lg)}
-.head h2{font-size:var(--text-2xl)}
-.head p{margin:0;font-size:var(--text-sm);color:var(--color-ink-2)}
-.more{display:inline-flex;align-items:center;gap:6px;font-weight:600;font-size:var(--text-sm);text-decoration:none;white-space:nowrap}
-.more:hover{text-decoration:underline}
-.note{margin:var(--space-md) 0 0;font-size:var(--text-sm);color:var(--color-ink-2)}
-.crumbs{display:flex;gap:6px;flex-wrap:wrap;margin:var(--space-lg) 0 var(--space-xs);font-size:var(--text-sm);color:var(--color-ink-2)}
-.crumbs a{text-decoration:none}
-.crumbs a:hover{text-decoration:underline}
-.page-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:var(--space-xs) var(--space-md)}
-.page-h h1{font-size:var(--text-2xl)}
-.page-h p{margin:0;color:var(--color-ink-2);font-size:var(--text-sm)}
-.btns{display:flex;flex-wrap:wrap;gap:var(--space-xs)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--space-xs);min-height:48px;padding:0 var(--space-lg);border-radius:999px;font-weight:600;text-decoration:none;white-space:nowrap;border:1.5px solid var(--color-rule);background:var(--color-card);color:var(--color-ink);cursor:pointer;transition:transform var(--dur) var(--ease-out),background-color var(--dur) var(--ease-out),border-color var(--dur) var(--ease-out)}
-.btn:hover{border-color:var(--color-ink)}
-.btn:active{transform:translateY(1px)}
-.btn.primary{background:var(--color-accent);border-color:var(--color-accent);color:var(--color-on-accent)}
-.btn.primary:hover{background:var(--color-accent-2);border-color:var(--color-accent-2)}
-.btn.dark{background:var(--color-ink);border-color:var(--color-ink);color:var(--color-card)}
-.btn.dark:hover{background:var(--color-night-2)}
-.chip{display:inline-flex;align-items:center;gap:6px;font-size:var(--text-xs);font-weight:600;padding:5px 10px;border-radius:999px;background:var(--color-night-2);color:var(--color-on-night-2);white-space:nowrap}
-.chip::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
-.chip[data-open="1"]{color:var(--color-ok)}
-.chip[data-open="0"]{color:var(--color-closed)}
-.chip:empty{display:none}
-.light .chip{background:var(--color-paper-2)}
-.light .chip[data-open="1"]{color:var(--color-ok-ink)}
-.light .chip[data-open="0"]{color:var(--color-closed-ink)}
-/* баннер */
-.msearch{margin-top:var(--space-md)}
-.banner{display:grid;grid-template-columns:minmax(0,1fr);margin-top:var(--space-md);background:var(--color-night);color:var(--color-on-night);border-radius:var(--radius-xl);overflow:hidden}
-.banner .txt{padding:var(--space-lg) var(--space-lg) var(--space-xl)}
-.banner h1{hyphens:manual}
-.banner .meta{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-xs) var(--space-sm);margin:0 0 var(--space-md);font-size:var(--text-sm);color:var(--color-on-night-2)}
-.banner h1{font-size:var(--text-display);text-wrap:balance}
-.banner .lead{font-size:var(--text-lg);max-width:40ch;margin:var(--space-sm) 0 0;color:var(--color-on-night-2)}
-.banner .btns{margin-top:var(--space-lg)}
-.banner .btn:not(.primary){background:transparent;color:var(--color-on-night);border-color:var(--color-night-line)}
-.banner .btn:not(.primary):hover{border-color:var(--color-on-night)}
-.stars{display:inline-flex;align-items:center;gap:var(--space-xs);margin-top:var(--space-lg);font-size:var(--text-sm);color:var(--color-on-night-2);text-decoration:none}
-.stars b{flex:none;white-space:nowrap;font:600 var(--text-lg)/1 var(--font-display);color:var(--color-accent)}
-.stars:hover span{text-decoration:underline}
-.gal{order:-1;display:grid;grid-auto-flow:column;grid-auto-columns:86%;gap:var(--space-xs);overflow-x:auto;scroll-snap-type:x mandatory;margin:0;padding:var(--space-sm) var(--space-sm) 0;scroll-padding:0 var(--space-sm);list-style:none;scrollbar-width:none}
+.top{position:sticky;top:0;z-index:40;background:rgba(248,246,251,.82);backdrop-filter:saturate(160%) blur(14px);-webkit-backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
+.top.is-stuck{border-bottom-color:var(--line);box-shadow:0 12px 30px -26px rgba(30,24,40,.5)}
+.top .wrap{display:flex;align-items:center;gap:24px;height:64px}
+.nav{display:none;gap:28px}
+.nav a{font-size:14.5px;color:var(--ink-2);text-decoration:none;transition:color .2s}
+.nav a:hover{color:var(--plum)}
+.top-tel{display:none;font:600 15px/1 var(--f-b);letter-spacing:-.01em;text-decoration:none}
+.icon-btn{display:grid;place-items:center;width:44px;height:44px;border-radius:999px;background:var(--plum);color:#fff;text-decoration:none}
+
+/* кнопки */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:500 15.5px/1 var(--f-b);text-decoration:none;border:1px solid transparent;transition:background .2s,border-color .2s,transform .2s var(--ease);white-space:nowrap}
+.btn:active{transform:scale(.98)}
+.btn-p{background:var(--plum);color:#fff;box-shadow:0 14px 28px -16px rgba(90,61,134,.8)}
+.btn-p:hover{background:#4a3071}
+.btn-g{border-color:var(--line-2);color:var(--ink);background:var(--panel)}
+.btn-g:hover{border-color:var(--plum)}
+
+/* первый экран */
+.hero{padding:28px 0 64px;position:relative}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:36px}
+.eyebrow{display:flex;align-items:center;gap:10px}
+.eyebrow i{width:18px;height:1px;background:var(--plum-2)}
+.hero h1{font-size:clamp(38px,10.5vw,70px);margin:18px 0 20px;text-wrap:balance}
+.hero h1 em{color:var(--plum)}
+.lead{font-size:17px;color:var(--ink-2);max-width:31em}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.cta .btn{flex:1 1 180px}
+.facts{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;margin-top:34px;border-top:1px solid var(--line-2)}
+.facts li{padding:16px 16px 0 0}
+.facts li+li{padding-left:16px;border-left:1px solid var(--line-2)}
+.facts strong{display:flex;align-items:center;gap:7px;font:600 17px/1.2 var(--f-b);letter-spacing:-.01em;white-space:nowrap}
+.facts small{display:block;margin-top:6px;font-size:12.5px;line-height:1.35;color:var(--ink-3)}
+.facts a{text-decoration:none}
+.dot{flex:none;width:8px;height:8px;border-radius:50%;background:var(--ink-3)}
+.dot.on{background:var(--ok);box-shadow:0 0 0 4px rgba(47,158,91,.15)}
+.star{color:var(--plum-2)}
+.shot{position:relative;margin:0}
+.ring{position:absolute;pointer-events:none;color:var(--plum-2)}
+.shot .ring{display:none}
+.shot .frame{position:relative;border-radius:var(--r-lg);overflow:hidden;background:var(--bg-2);box-shadow:0 40px 70px -46px rgba(50,30,80,.6)}
+.shot img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 45%}
+.shot figcaption{display:flex;justify-content:space-between;gap:12px;margin-top:12px}
+.tag{position:absolute;right:14px;top:14px;display:flex;flex-direction:column;gap:3px;padding:11px 14px;border-radius:14px;background:rgba(255,255,255,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 10px 30px -18px rgba(0,0,0,.6)}
+.tag small{font:500 11.5px/1.2 var(--f-b);color:var(--ink-3)}
+.tag b{font:600 15px/1.2 var(--f-b);letter-spacing:-.01em}
+
+/* секции */
+.sec{padding:72px 0;border-top:1px solid var(--line)}
+.sec-head{display:grid;gap:14px;margin-bottom:34px}
+.sec-head h2{font-size:clamp(30px,7vw,46px)}
+.sec-head h2 em{color:var(--plum)}
+.sec-head p{color:var(--ink-2);max-width:34em}
+
+/* прайс: три популярные модели карточками, остальное — строками */
+.models{display:grid;gap:12px}
+.model{position:relative;display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:var(--r-lg);padding:22px 20px 22px;overflow:hidden}
+.model-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.chip{padding:5px 10px;border-radius:999px;background:var(--plum-soft);color:var(--plum);font:600 11.5px/1 var(--f-b);letter-spacing:.02em}
+.model h3{font-size:28px;margin-top:22px}
+.from{margin-top:auto;padding-top:26px;font:600 30px/1 var(--f-b);letter-spacing:-.03em}
+.model .ring{right:-46px;bottom:-46px;width:150px;height:150px;opacity:.4}
+.list{margin-top:12px;background:var(--panel);border:1px solid var(--line);border-radius:var(--r-lg);padding:6px 20px}
+.list li{display:flex;align-items:baseline;gap:12px;padding:15px 0;font-size:16px}
+.list li+li{border-top:1px solid var(--line)}
+.list li::after{content:"";order:1;flex:1;border-bottom:1px dotted var(--line-2);transform:translateY(-4px)}
+.list b{order:2;font:600 16px/1 var(--f-b);letter-spacing:-.01em}
+.note{margin-top:18px;font-size:13px;color:var(--ink-3)}
+
+/* тёмная полоса: что отмечают покупатели */
+.band{background:var(--night);color:var(--on-night);border-top:0;position:relative;overflow:hidden}
+.band .ring{display:none;right:max(-140px,calc((100% - var(--max))/2 - 220px));top:-160px;width:520px;height:520px;opacity:.22;color:#b79ce0}
+.band .sec-head p{color:var(--on-night-2)}
+.why{display:grid;gap:0;position:relative}
+.why li{display:grid;align-content:start;grid-template-columns:44px 1fr;gap:4px 14px;padding:22px 0;border-top:1px solid var(--night-line)}
+.why li:last-child{border-bottom:1px solid var(--night-line)}
+.why .n{grid-row:span 2;font:500 15px/1 var(--f-d);font-style:italic;color:#b79ce0;padding-top:6px;font-variant-numeric:tabular-nums}
+.why h3{font-size:23px;margin-bottom:6px}
+.why p{color:var(--on-night-2);font-size:15px}
+
+/* галерея */
+.gal{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 calc(var(--gut)*-1);padding:0 var(--gut) 6px;scrollbar-width:none}
 .gal::-webkit-scrollbar{display:none}
-.gal li{scroll-snap-align:start}
-.gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius-lg);background:var(--color-night-2)}
-/* преимущества */
-.perks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-xs);margin:var(--space-xs) 0 0;padding:0;list-style:none}
-.perks li{display:flex;align-items:center;gap:var(--space-sm);min-height:64px;padding:var(--space-sm) var(--space-md);background:var(--color-card);border:1px solid var(--color-rule);border-radius:var(--radius-lg);font-size:var(--text-sm);font-weight:500;line-height:1.3}
-.perks svg{flex:none;color:var(--color-accent-ink)}
-/* категории */
-.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-xs);margin:0;padding:0;list-style:none}
-.tile{display:flex;flex-direction:column;justify-content:space-between;gap:var(--space-md);height:100%;min-height:128px;padding:var(--space-md);background:var(--color-card);border:1px solid var(--color-rule);border-radius:var(--radius-lg);text-decoration:none;transition:border-color var(--dur) var(--ease-out),transform var(--dur) var(--ease-out)}
-a.tile:hover{border-color:var(--color-ink)}
-a.tile:active{transform:translateY(1px)}
-.tile .ico{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:var(--color-well);color:var(--color-ink)}
-.tile b{display:block;font-weight:600;line-height:1.25}
-.tile span{font-size:var(--text-sm);color:var(--color-ink-2)}
-/* карточки товаров */
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-xs);margin:0;padding:0;list-style:none}
-.card{display:flex;flex-direction:column;min-width:0;background:var(--color-card);border:1px solid var(--color-rule);border-radius:var(--radius-lg);padding:var(--space-xs);transition:border-color var(--dur) var(--ease-out)}
-.card:hover{border-color:var(--color-ink-3)}
-.well{position:relative;display:grid;place-items:center;aspect-ratio:5/4;background:var(--color-well);border-radius:14px;color:var(--color-ink-3)}
-.well svg{width:40%;height:auto;max-width:76px;stroke-width:1.1}
-.well .tag{position:absolute;top:var(--space-xs);left:var(--space-xs);font-size:var(--text-2xs);font-weight:700;background:var(--color-accent);color:var(--color-on-accent);border-radius:999px;padding:3px 8px}
-.card .body{display:flex;flex-direction:column;gap:6px;flex:1;padding:var(--space-sm) var(--space-2xs) var(--space-2xs)}
-.brand{font-size:var(--text-xs);font-weight:600;color:var(--color-ink-2)}
-.card h3{font:500 var(--text-sm)/1.35 var(--font-body);letter-spacing:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-.price{margin:auto 0 0;padding-top:var(--space-xs);font:700 var(--text-lg)/1.1 var(--font-body);font-variant-numeric:tabular-nums;white-space:nowrap;letter-spacing:-.01em}
-.add{margin-top:var(--space-xs);width:100%;min-height:44px;border-radius:var(--radius);border:1.5px solid var(--color-rule);background:var(--color-card);font-weight:600;font-size:var(--text-sm);cursor:pointer;transition:background-color var(--dur) var(--ease-out),border-color var(--dur) var(--ease-out),transform var(--dur) var(--ease-out)}
-.add:hover{border-color:var(--color-ink)}
-.add:active{transform:translateY(1px)}
-.add.on{background:var(--color-accent);border-color:var(--color-accent);color:var(--color-on-accent)}
-/* каталог */
-.tools{position:sticky;top:var(--hdr-h);z-index:10;display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-xs);background:var(--color-paper);padding:var(--space-sm) 0;margin-bottom:var(--space-xs)}
-.chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin:0 calc(-1 * var(--space-md));padding:0 var(--space-md)}
-.chips::-webkit-scrollbar{display:none}
-.chips button{flex:none;min-height:40px;padding:0 var(--space-md);border-radius:999px;border:1px solid var(--color-rule);background:var(--color-card);font-size:var(--text-sm);font-weight:500;white-space:nowrap;cursor:pointer;transition:background-color var(--dur) var(--ease-out),border-color var(--dur) var(--ease-out)}
-.chips button:hover{border-color:var(--color-ink-2)}
-.chips button span{margin-left:6px;color:var(--color-ink-3);font-variant-numeric:tabular-nums}
-.chips button[aria-pressed="true"]{background:var(--color-ink);border-color:var(--color-ink);color:var(--color-card)}
-.chips button[aria-pressed="true"] span{color:var(--color-on-night-2)}
-.bar2{display:flex;align-items:center;justify-content:space-between;gap:var(--space-sm);font-size:var(--text-sm);color:var(--color-ink-2)}
-.bar2 select{min-height:40px;padding:0 var(--space-sm);border:1px solid var(--color-rule);border-radius:999px;background:var(--color-card);font:inherit;color:var(--color-ink);cursor:pointer}
-.none{padding:var(--space-xl) var(--space-lg);text-align:center;background:var(--color-card);border:1px dashed var(--color-rule);border-radius:var(--radius-lg)}
-.none p{margin:0 0 var(--space-md)}
-/* бренды */
-.brands{display:flex;flex-wrap:wrap;gap:var(--space-xs);margin:0;padding:0;list-style:none}
-.brands a{display:inline-flex;align-items:center;gap:var(--space-xs);min-height:48px;padding:0 var(--space-lg);border-radius:999px;background:var(--color-card);border:1px solid var(--color-rule);font-weight:600;text-decoration:none;transition:border-color var(--dur) var(--ease-out)}
-.brands a:hover{border-color:var(--color-ink)}
-.brands span{font-weight:400;font-size:var(--text-sm);color:var(--color-ink-2)}
+.gal figure{flex:0 0 78%;margin:0;scroll-snap-align:start;border-radius:var(--r);overflow:hidden;background:var(--bg-2)}
+.gal img{width:100%;height:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .9s var(--ease)}
+.gal figure:hover img{transform:scale(1.03)}
+.gal-foot{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:18px}
+.link{color:var(--plum);text-decoration:none;font-size:14.5px;font-weight:500;border-bottom:1px solid rgba(90,61,134,.3);padding-bottom:2px;white-space:nowrap}
+.link:hover{border-color:var(--plum)}
+
 /* отзывы */
-.how{display:grid;gap:var(--space-xs);margin:0;padding:0;list-style:none;grid-template-columns:minmax(0,1fr)}
-.how li{background:var(--color-card);border:1px solid var(--color-rule);border-radius:var(--radius-lg);padding:var(--space-lg)}
-.how h3{font-size:var(--text-lg);margin-bottom:var(--space-xs)}
-.how p{margin:0;color:var(--color-ink-2)}
-.scores{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:var(--space-xs);margin-bottom:var(--space-xs)}
-.score{display:flex;align-items:center;gap:var(--space-md);background:var(--color-night);color:var(--color-on-night);border-radius:var(--radius-lg);padding:var(--space-lg);text-decoration:none;transition:background-color var(--dur) var(--ease-out)}
-.score:hover{background:var(--color-night-2)}
-.score b{font:600 2.75rem/1 var(--font-display);color:var(--color-accent)}
-.score span{font-size:var(--text-sm);color:var(--color-on-night-2);line-height:1.4}
-.score strong{display:block;color:var(--color-on-night);font-size:var(--text-base)}
-.quotes{display:grid;gap:var(--space-xs);margin:0;padding:0;list-style:none;grid-template-columns:minmax(0,1fr)}
-.quotes li{background:var(--color-card);border:1px solid var(--color-rule);border-radius:var(--radius-lg);padding:var(--space-lg);font-size:var(--text-lg);line-height:1.45}
-.quotes li::before{content:"«";display:block;font:600 2.25rem/0.8 var(--font-display);color:var(--color-accent-ink);margin-bottom:var(--space-xs)}
+.rev{display:grid;gap:12px}
+.scores{display:grid;grid-template-columns:1fr 1fr;background:var(--panel);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden}
+.score{padding:24px 20px;text-decoration:none;display:flex;flex-direction:column}
+.score+.score{border-left:1px solid var(--line)}
+.score b{display:block;font:500 56px/1 var(--f-d);letter-spacing:-.03em}
+.score .stars{display:flex;gap:3px;margin:12px 0 10px;color:var(--plum-2)}
+.score p{color:var(--ink-2);font-size:13.5px;line-height:1.4}
+.score .src{margin-top:auto;padding-top:14px;font:600 13px/1 var(--f-b);color:var(--plum)}
+.quote{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:var(--r-lg);padding:24px 22px;display:flex;flex-direction:column;gap:18px}
+.quote svg{color:var(--plum-2);opacity:.7}
+.quote p{font:500 18px/1.5 var(--f-d)}
+.quote small{margin-top:auto;color:var(--ink-3);font-size:13px}
+
+/* оплата и услуги */
+.perks{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden}
+.perks li{display:flex;flex-direction:column;gap:14px;background:var(--panel);padding:20px 16px;font-size:14.5px;line-height:1.35}
+.perks svg{color:var(--plum)}
+
 /* контакты */
-.contacts{display:grid;gap:var(--space-xs);grid-template-columns:minmax(0,1fr)}
-.box{background:var(--color-card);border:1px solid var(--color-rule);border-radius:var(--radius-lg);padding:var(--space-lg)}
-.box h2,.box h3{font:600 var(--text-sm)/1.3 var(--font-body);color:var(--color-ink-2);letter-spacing:0;margin-bottom:var(--space-sm)}
-.box address{font:600 var(--text-xl)/1.3 var(--font-display);font-style:normal;letter-spacing:-.01em}
-.box .tel{display:inline-block;margin-top:var(--space-sm);font:700 var(--text-xl)/1.3 var(--font-body);text-decoration:none;font-variant-numeric:tabular-nums}
-.box .btns{margin-top:var(--space-md)}
-.box .more{margin-top:var(--space-md)}
-.tags{display:flex;flex-wrap:wrap;gap:var(--space-xs);margin:0;padding:0;list-style:none}
-.tags li{background:var(--color-paper-2);border-radius:999px;padding:var(--space-2xs) var(--space-sm);font-size:var(--text-sm)}
-.hours{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
-.hours td{padding:var(--space-xs) 0;border-top:1px solid var(--color-rule)}
-.hours tr:first-child td{border-top:0}
-.hours td:last-child{text-align:right}
-.hours tr.today td{font-weight:700}
-.hours tr.today td:first-child::after{content:" · сегодня";font-weight:500;color:var(--color-accent-ink)}
-.map{display:block;width:100%;aspect-ratio:4/3;border:0;border-radius:var(--radius-lg);background:var(--color-paper-2)}
-/* список покупок */
-dialog.sheet{width:100%;max-width:100%;max-height:88vh;margin:auto 0 0;padding:0;border:0;border-radius:var(--radius-xl) var(--radius-xl) 0 0;background:var(--color-card);color:var(--color-ink)}
-dialog.sheet::backdrop{background:var(--color-scrim)}
-.sheet .in{display:flex;flex-direction:column;max-height:88vh}
-.sheet .top{display:flex;align-items:center;justify-content:space-between;gap:var(--space-md);padding:var(--space-md) var(--space-md) var(--space-md) var(--space-lg);border-bottom:1px solid var(--color-rule)}
-.sheet .top h2{font-size:var(--text-xl)}
-.sheet .scroll{overflow-y:auto;padding:var(--space-xs) var(--space-lg)}
-.sheet ul{margin:0;padding:0;list-style:none}
-.sheet li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--space-xs) var(--space-md);align-items:center;padding:var(--space-md) 0;border-top:1px solid var(--color-rule)}
-.sheet li:first-child{border-top:0}
-.sheet li span{font-size:var(--text-sm);line-height:1.35}
-.sheet li b{font-variant-numeric:tabular-nums;white-space:nowrap}
-.qty{grid-column:1/-1;display:inline-flex;align-items:center;gap:var(--space-2xs)}
-.qty button{width:40px;height:40px;border-radius:var(--radius);border:1px solid var(--color-rule);background:var(--color-card);font-size:var(--text-lg);cursor:pointer}
-.qty button:hover{border-color:var(--color-ink)}
-.qty output{min-width:32px;text-align:center;font-weight:600;font-variant-numeric:tabular-nums}
-.sheet .empty{margin:var(--space-lg) 0;color:var(--color-ink-2)}
-.sheet .foot{display:grid;gap:var(--space-xs);padding:var(--space-md) var(--space-lg) calc(var(--space-lg) + env(safe-area-inset-bottom));border-top:1px solid var(--color-rule)}
-.sheet .sum{display:flex;justify-content:space-between;align-items:baseline;margin:0 0 var(--space-2xs);font-size:var(--text-sm);color:var(--color-ink-2)}
-.sheet .sum b{font:700 var(--text-xl)/1 var(--font-body);color:var(--color-ink);font-variant-numeric:tabular-nums}
-.sheet .foot .btn{width:100%}
-.sheet .foot small{font-size:var(--text-xs);color:var(--color-ink-2)}
+.contact{display:grid;gap:12px}
+.c-main{background:var(--panel);border:1px solid var(--line);border-radius:var(--r-lg);padding:26px 22px}
+.c-main address{font-style:normal;font:500 25px/1.2 var(--f-d);letter-spacing:-.015em;margin:10px 0 6px}
+.c-sub{color:var(--ink-2);font-size:14.5px;margin-bottom:16px}
+.c-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:15px 0;border-top:1px solid var(--line)}
+.c-row a{font:600 17px/1 var(--f-b);letter-spacing:-.01em;text-decoration:none;white-space:nowrap}
+.c-row a:hover{color:var(--plum)}
+.c-row span{color:var(--ink-3);font-size:13.5px;text-align:right}
+.c-btns{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:18px}
+.c-btns .btn{padding:0 12px;min-height:48px;font-size:14.5px}
+.c-btns .btn:first-child{grid-column:1/-1}
+.c-door{display:grid;grid-template-columns:112px 1fr;gap:16px;align-items:center;margin-top:20px;padding:12px;border-radius:var(--r);background:var(--bg)}
+.c-door img{width:112px;height:96px;object-fit:cover;border-radius:10px}
+.c-door p{font-size:14px;color:var(--ink-2)}
+.c-door b{color:var(--ink);font-weight:600}
+.map{position:relative;min-height:340px;border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line);background:var(--bg-2)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:saturate(.7)}
+
 /* подвал */
-footer{margin-top:var(--space-2xl);background:var(--color-night);color:var(--color-on-night-2);padding-block:var(--space-xl);font-size:var(--text-sm)}
-footer .cols{display:grid;gap:var(--space-lg);grid-template-columns:minmax(0,1fr)}
-footer b{display:block;margin-bottom:var(--space-xs);color:var(--color-on-night);font:600 var(--text-base)/1.3 var(--font-display)}
-footer p{margin:0 0 var(--space-2xs)}
-footer ul{margin:0;padding:0;list-style:none;display:grid;gap:var(--space-2xs)}
-footer a{text-decoration:none}
-footer a:hover{color:var(--color-on-night);text-decoration:underline}
-footer .demo-note{margin-top:var(--space-xl);padding-top:var(--space-lg);border-top:1px solid var(--color-night-line)}
-footer .demo-note strong{color:var(--color-on-night)}
-@media (min-width:600px){
-  .grid{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .tiles{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .perks{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.foot{background:var(--night);color:var(--on-night-2);padding:44px 0 124px;font-size:13px}
+.foot .wrap{display:grid;gap:22px}
+.foot .logo{color:#b79ce0}
+.foot .logo b{color:var(--on-night)}
+.foot .logo span{color:var(--on-night-2)}
+.foot p{max-width:50em}
+.foot a{color:var(--on-night)}
+
+/* нижняя панель на телефоне */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:50;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px var(--gut) calc(10px + env(safe-area-inset-bottom));background:rgba(248,246,251,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .35s var(--ease)}
+.dock.show{transform:none}
+.dock .btn{min-height:48px;padding:0 12px}
+
+/* появление */
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease),transform .7s var(--ease);transition-delay:calc(var(--d,0)*70ms)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .rv{opacity:1;transform:none;transition:none}.gal img{transition:none}}
+
+@media (max-width:520px){
+  .facts{grid-template-columns:1fr 1fr}
+  .facts li:nth-child(3){grid-column:1/-1;border-left:0;padding-left:0;border-top:1px solid var(--line-2);margin-top:14px}
 }
-@media (min-width:768px){
-  dialog.sheet{max-width:480px;margin:auto;border-radius:var(--radius-xl)}
-  .how{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .quotes{grid-auto-flow:column;grid-auto-columns:minmax(0,1fr)}
-  .contacts{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr)}
-  .contacts.map-first{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr)}
-  .map{aspect-ratio:auto;height:100%;min-height:420px}
-  footer .cols{grid-template-columns:1.4fr 1fr 1fr}
+@media (min-width:640px){
+  :root{--gut:28px}
+  .models{grid-template-columns:repeat(3,1fr)}
+  .list{display:grid;grid-template-columns:1fr 1fr;column-gap:40px;padding:6px 28px}
+  .list li:nth-child(2){border-top:0}
+  .rev{grid-template-columns:1fr 1fr}
+  .perks{grid-template-columns:repeat(4,1fr)}
+  .gal figure{flex-basis:44%}
+  .why{grid-template-columns:1fr 1fr;column-gap:32px}
+  .why li:nth-last-child(2){border-bottom:1px solid var(--night-line)}
 }
 @media (min-width:960px){
-  :root{--hdr-h:117px;--tabs-h:0px}
-  .tabs,.msearch,.hdr .mob{display:none}
-  .hdr .hsearch{display:flex;flex:1;max-width:460px;margin-right:auto}
-  .logo{margin-right:var(--space-lg);max-width:280px}
-  .htel{display:flex;flex-direction:column;align-items:flex-end;line-height:1.25;text-decoration:none;margin-right:var(--space-xs)}
-  .htel b{font-variant-numeric:tabular-nums}
-  .htel span{font-size:var(--text-xs);color:var(--color-ink-2)}
-  .hdr .row{min-height:68px}
-  .hnav{display:flex;align-items:center;gap:var(--space-2xs);min-height:48px;overflow-x:auto;scrollbar-width:none}
-  .hnav a{flex:none;display:inline-flex;align-items:center;gap:var(--space-xs);min-height:40px;padding:0 var(--space-sm);border-radius:999px;font-size:var(--text-sm);font-weight:500;text-decoration:none;white-space:nowrap;transition:background-color var(--dur) var(--ease-out)}
-  .hnav a:hover{background:var(--color-paper-2)}
-  .hnav a[aria-current]{background:var(--color-paper-2);font-weight:600}
-  .hnav a.cat{background:var(--color-ink);color:var(--color-card);font-weight:600;margin-right:var(--space-xs)}
-  .hnav a.cat:hover{background:var(--color-night-2)}
-  .banner{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:center;margin-top:var(--space-lg)}
-  .banner .txt{padding:var(--space-xl) var(--space-xl) var(--space-xl) calc(var(--space-xl) + var(--space-xs))}
-  .gal{order:0;grid-auto-flow:row;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible;padding:var(--space-sm)}
-  .gal li:first-child{grid-column:1/-1}
-  .gal li:nth-child(n+5){display:none}
-  .grid{grid-template-columns:repeat(4,minmax(0,1fr))}
-  .tiles{grid-template-columns:repeat(4,minmax(0,1fr))}
-  .tools{position:static}
+  :root{--gut:40px}
+  .nav{display:flex}
+  .top-tel{display:block}
+  .icon-btn{display:none}
+  .hero{padding:56px 0 104px}
+  .hero .wrap{grid-template-columns:1.1fr .9fr;gap:80px;align-items:center}
+  .lead{font-size:18px}
+  .cta .btn{flex:0 0 auto}
+  .shot .ring{display:block;width:150%;height:auto;aspect-ratio:1;left:-25%;top:50%;transform:translateY(-52%);opacity:.5}
+  .sec{padding:112px 0}
+  .sec-head{grid-template-columns:1fr 1fr;align-items:end;gap:40px;margin-bottom:48px}
+  .sec-head p{justify-self:end;max-width:28em}
+  .models{gap:16px}
+  .model{padding:28px 26px 26px;min-height:250px}
+  .model h3{font-size:32px}
+  .from{font-size:34px}
+  .list{grid-template-columns:repeat(3,1fr);padding:8px 28px}
+  .list li:nth-child(3){border-top:0}
+  .band .ring{display:block}
+  .why{grid-template-columns:repeat(4,1fr);gap:28px}
+  .why li,.why li:last-child,.why li:nth-last-child(2){grid-template-columns:1fr;border:0;border-top:1px solid var(--night-line);padding:24px 0 0}
+  .why .n{grid-row:auto;padding:0 0 36px}
+  .gal{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,270px);overflow:visible;margin:0;padding:0}
+  .gal figure{flex:none}
+  .gal img{aspect-ratio:auto}
+  .gal figure:nth-child(1){grid-column:span 2;grid-row:span 2}
+  .rev{grid-template-columns:repeat(2,1fr);gap:16px}
+  .score{padding:32px 30px}
+  .score b{font-size:68px}
+  .quote{padding:34px 32px}
+  .quote p{font-size:20px}
+  .perks{grid-template-columns:repeat(4,1fr)}
+  .perks li{padding:26px 22px}
+  .contact{grid-template-columns:.9fr 1.1fr}
+  .c-main{padding:34px 32px}
+  .c-main address{font-size:30px}
+  .map{min-height:100%}
+  .dock{display:none}
+  .foot{padding-bottom:52px}
+  .foot .wrap{grid-template-columns:auto 1fr;gap:56px;align-items:start}
 }
-@media (min-width:1180px){
-  .grid.wide{grid-template-columns:repeat(5,minmax(0,1fr))}
-  .tiles{grid-template-columns:repeat(5,minmax(0,1fr))}
-}
-@media (prefers-reduced-motion:reduce){*{transition:opacity 120ms linear !important}}
-</style></head><body data-slug="teh-021">
-<div class="demo" role="note">Демо-концепт, не официальный сайт, удалим по первой просьбе</div>
-<header class="hdr"><div class="wrap">
-<div class="row"><a class="logo" href="index.html">Apple_pro</a>
-<form class="search hsearch" action="catalog.html" role="search"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><input name="q" type="search" placeholder="Поиск по каталогу" aria-label="Поиск по каталогу" autocomplete="off"><button type="submit">Найти</button></form>
-<a class="htel" href="tel:+79501031634"><b>+7 (950) 103-16-34</b><span>ежедневно, 10:00–20:00</span></a>
-<button type="button" class="ibtn" data-list aria-label="Список покупок"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="badge" data-count hidden></span></button>
-<a class="ibtn acc mob" href="tel:+79501031634" aria-label="Позвонить +7 (950) 103-16-34"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg></a></div>
-<nav class="hnav" aria-label="Разделы"><a href="index.html" aria-current="page">Главная</a><a href="catalog.html" class="cat"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></svg>Каталог</a><a href="catalog.html?t=phone">Смартфоны</a><a href="index.html#reviews">Отзывы</a><a href="contacts.html">Контакты</a></nav>
-</div></header>
-<main class="wrap">
-<form class="search msearch" action="catalog.html" role="search"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><input name="q" type="search" placeholder="Поиск по каталогу" aria-label="Поиск по каталогу" autocomplete="off"><button type="submit">Найти</button></form>
-<div class="banner"><div class="txt">
-<p class="meta"><span class="chip" id="status"></span><span>Иркутск, улица Степана Разина, 5</span></p>
-<h1>Магазин электроники</h1><p class="lead">Магазин электроники, товары для мобильных телефонов, салон связи. Цены из прайса — ниже.</p>
-<div class="btns"><a class="btn primary" href="catalog.html"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></svg>Каталог и цены</a><a class="btn" href="tel:+79501031634"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Позвонить</a></div>
-<a class="stars" href="index.html#reviews"><b>★ 5,0</b><span>165 оценок на Яндекс Картах</span></a></div>
-<ul class="gal" aria-label="Фото магазина с карточки на Яндекс Картах"><li><img src="img/01.jpg" srcset="img/01-800.jpg 800w, img/01.jpg 1600w" sizes="(min-width:960px) 600px, 86vw" alt="Фото с карточки «Apple_pro» на Яндекс Картах" fetchpriority="high" decoding="async"></li><li><img src="img/02.jpg" srcset="img/02-800.jpg 800w, img/02.jpg 1600w" sizes="(min-width:960px) 600px, 86vw" alt="Фото с карточки «Apple_pro» на Яндекс Картах" loading="lazy" decoding="async"></li><li><img src="img/03.jpg" srcset="img/03-800.jpg 800w, img/03.jpg 1600w" sizes="(min-width:960px) 600px, 86vw" alt="Фото с карточки «Apple_pro» на Яндекс Картах" loading="lazy" decoding="async"></li><li><img src="img/04.jpg" srcset="img/04-800.jpg 800w, img/04.jpg 1600w" sizes="(min-width:960px) 600px, 86vw" alt="Фото с карточки «Apple_pro» на Яндекс Картах" loading="lazy" decoding="async"></li><li><img src="img/05.jpg" alt="Фото с карточки «Apple_pro» на Яндекс Картах" loading="lazy" decoding="async"></li><li><img src="img/06.jpg" srcset="img/06-800.jpg 800w, img/06.jpg 1600w" sizes="(min-width:960px) 600px, 86vw" alt="Фото с карточки «Apple_pro» на Яндекс Картах" loading="lazy" decoding="async"></li><li><img src="img/07.jpg" srcset="img/07-800.jpg 800w, img/07.jpg 1600w" sizes="(min-width:960px) 600px, 86vw" alt="Фото с карточки «Apple_pro» на Яндекс Картах" loading="lazy" decoding="async"></li></ul></div>
-<ul class="perks"><li><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7"/><circle cx="7" cy="17.5" r="1.5"/><circle cx="17" cy="17.5" r="1.5"/></svg>Доставка</li><li><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></svg>Оплата картой</li></ul>
+</style>
+</head>
+<body>
+<a class="skip" href="#main">К содержимому</a>
+<div class="demo"><b>Демо-концепт</b>, не официальный сайт, удалим по первой просьбе</div>
 
-<section><div class="head"><h2>Часто берут</h2><a class="more" href="catalog.html">Все 9 товаров <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-<ul class="grid wide"><li class="card" data-t="phone" data-b="Apple" data-p="76990" data-i="0" data-s="iphone 14 pro max  смартфоны apple">
-<div class="well"><svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg></div>
-<div class="body"><span class="brand">Apple</span><h3>iPhone 14 Pro Max</h3><p class="price">76 990 ₽</p>
-<button type="button" class="add" data-add="1x13kpo" data-n="iPhone 14 Pro Max" data-p="76990" aria-pressed="false">В список</button></div></li><li class="card" data-t="phone" data-b="Apple" data-p="72990" data-i="1" data-s="iphone 14 pro  смартфоны apple">
-<div class="well"><svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg></div>
-<div class="body"><span class="brand">Apple</span><h3>iPhone 14 Pro</h3><p class="price">72 990 ₽</p>
-<button type="button" class="add" data-add="rxspfw" data-n="iPhone 14 Pro" data-p="72990" aria-pressed="false">В список</button></div></li><li class="card" data-t="phone" data-b="Apple" data-p="68990" data-i="2" data-s="iphone 15  смартфоны apple">
-<div class="well"><svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg></div>
-<div class="body"><span class="brand">Apple</span><h3>iPhone 15</h3><p class="price">68 990 ₽</p>
-<button type="button" class="add" data-add="61h9nv" data-n="iPhone 15" data-p="68990" aria-pressed="false">В список</button></div></li></ul>
-<p class="note">Цены из прайса на Яндекс Картах. Наличие и точную цену уточняйте по телефону.</p></section>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- кольцо из точек с логотипа: плотная середина и рассыпающиеся края -->
+    <symbol id="ring" viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="88" fill="none" stroke="currentColor" stroke-width="1.1" stroke-dasharray="0 4.2" stroke-linecap="round" opacity=".35"/>
+      <circle cx="100" cy="100" r="84" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="0 4" stroke-linecap="round" opacity=".65"/>
+      <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" stroke-width="2.2" stroke-dasharray="0 3.6" stroke-linecap="round"/>
+      <circle cx="100" cy="100" r="76" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="0 3.8" stroke-linecap="round" opacity=".6"/>
+      <circle cx="100" cy="100" r="72.5" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="0 4.4" stroke-linecap="round" opacity=".3"/>
+    </symbol>
+    <symbol id="ring-s" viewBox="0 0 40 40">
+      <circle cx="20" cy="20" r="17.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-dasharray="0 2.75" stroke-linecap="round" opacity=".45"/>
+      <circle cx="20" cy="20" r="15" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="0 2.95" stroke-linecap="round"/>
+      <circle cx="20" cy="20" r="12.6" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="0 2.6" stroke-linecap="round" opacity=".5"/>
+      <text x="20" y="24.2" text-anchor="middle" font-family="Lora,Georgia,serif" font-size="11.5" font-weight="600" fill="currentColor">AP</text>
+    </symbol>
+    <symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+    <symbol id="q" viewBox="0 0 24 24"><path fill="currentColor" d="M4 18v-5.5C4 8 6.4 5.3 10 4.5l.6 1.6C8.4 7 7.4 8.6 7.3 11H10v7zm10 0v-5.5C14 8 16.4 5.3 20 4.5l.6 1.6c-2.2.9-3.2 2.5-3.3 4.9H20v7z"/></symbol>
+    <symbol id="phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+  </defs>
+</svg>
 
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="#main" aria-label="Apple Pro — наверх">
+      <svg width="36" height="36" aria-hidden="true"><use href="#ring-s"/></svg>
+      <div><b>Apple Pro</b><span>iPhone · Иркутск</span></div>
+    </a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#prices">Цены</a>
+      <a href="#why">Почему здесь</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="top-tel" href="tel:+79501031634">+7 (950) 103-16-34</a>
+    <a class="icon-btn" href="tel:+79501031634" aria-label="Позвонить +7 (950) 103-16-34"><svg width="20" height="20" aria-hidden="true"><use href="#phone"/></svg></a>
+  </div>
+</header>
 
-<section id="reviews"><div class="head"><h2>Что пишут покупатели</h2><p>пересказ отзывов с карт</p></div>
-<div class="scores"><a class="score" href="https://yandex.ru/maps/org/144127283749/reviews/" rel="noopener"><b>5,0</b><span><strong>Яндекс Карты</strong>165 оценок, 156 отзывов</span></a><a class="score" href="https://2gis.ru/firm/70000001039361774" rel="noopener"><b>4,9</b><span><strong>2ГИС</strong>822 оценки, 726 отзывов</span></a></div>
-<ul class="quotes"><li>Большой выбор айфонов, цены без накруток.</li><li>Б/у телефон в отличном состоянии проверили вместе с покупателем по серийному номеру.</li><li>Новые телефоны в заводской запечатанной коробке, наклеили защитное стекло.</li></ul></section>
-<section id="shop"><div class="head"><h2>Магазин</h2><a class="more" href="contacts.html">Карта и все контакты <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-<div class="contacts"><div class="box"><h3>Адрес</h3><address>Иркутск, улица Степана Разина, 5</address>
-<a class="tel" href="tel:+79501031634">+7 (950) 103-16-34</a>
-<div class="btns"><a class="btn primary" href="tel:+79501031634"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Позвонить</a><a class="btn" href="https://yandex.ru/maps/?rtext=~52.286481,104.272938" rel="noopener">Маршрут</a></div></div><div class="box"><h3>Часы работы</h3><table class="hours"><tr data-d="0" data-h="10:00-20:00"><td>Пн</td><td>10:00–20:00</td></tr><tr data-d="1" data-h="10:00-20:00"><td>Вт</td><td>10:00–20:00</td></tr><tr data-d="2" data-h="10:00-20:00"><td>Ср</td><td>10:00–20:00</td></tr><tr data-d="3" data-h="10:00-20:00"><td>Чт</td><td>10:00–20:00</td></tr><tr data-d="4" data-h="10:00-20:00"><td>Пт</td><td>10:00–20:00</td></tr><tr data-d="5" data-h="10:00-20:00"><td>Сб</td><td>10:00–20:00</td></tr><tr data-d="6" data-h="10:00-20:00"><td>Вс</td><td>10:00–20:00</td></tr></table></div></div></section>
+<main id="main">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow lbl"><i></i>Магазин iPhone · Иркутск</p>
+        <h1>Айфоны без&nbsp;накруток <em>и&nbsp;с&nbsp;проверкой при&nbsp;вас</em></h1>
+        <p class="lead">Apple Pro на&nbsp;Степана Разина, 5: iPhone от&nbsp;11&nbsp;Pro&nbsp;Max до&nbsp;15. Покупатели пишут, что модели спокойно дают подержать и&nbsp;сравнить, а&nbsp;телефон проверяют вместе с&nbsp;покупателем по&nbsp;серийному номеру.</p>
+        <div class="cta">
+          <a class="btn btn-p" href="tel:+79501031634"><svg width="18" height="18" aria-hidden="true"><use href="#phone"/></svg>Позвонить</a>
+          <a class="btn btn-g" href="#prices">Смотреть цены</a>
+        </div>
+        <ul class="facts">
+          <li><a href="#reviews"><strong><span class="star">★</span> 5,0</strong><small>165 оценок<br>на Яндекс Картах</small></a></li>
+          <li><a href="#reviews"><strong><span class="star">★</span> 4,9</strong><small>822 оценки<br>в 2ГИС</small></a></li>
+          <li><strong><span class="dot" data-dot></span><span data-status>10:00–20:00</span></strong><small>ежедневно,<br>без выходных</small></li>
+        </ul>
+      </div>
+      <figure class="shot rv">
+        <svg class="ring" aria-hidden="true"><use href="#ring"/></svg>
+        <div class="frame">
+          <img src="img/06.jpg" srcset="img/06-800.jpg 800w, img/06.jpg 1200w" sizes="(min-width:960px) 470px, 100vw" alt="Коробка iPhone 12 Pro в руке покупательницы, внизу фирменная наклейка APPLE_PRO38" fetchpriority="high" decoding="async" width="1200" height="1600">
+          <span class="tag"><small>В прайсе — iPhone 11 Pro Max … 15</small><b class="num">от 23&nbsp;990&nbsp;₽</b></span>
+        </div>
+        <figcaption class="lbl"><span>Фото с карточки магазина</span><span>Яндекс Карты</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec" id="prices">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="rv">Модели и&nbsp;цены</h2>
+        <p class="rv" style="--d:1">Все позиции из&nbsp;прайса на&nbsp;карточке магазина. Наличие, память и&nbsp;цвет лучше уточнить по&nbsp;телефону — цены меняются вместе с&nbsp;поставками.</p>
+      </div>
+      <ul class="models">
+        <li class="model rv">
+          <svg class="ring" aria-hidden="true"><use href="#ring"/></svg>
+          <div class="model-top"><span class="lbl">Apple</span><span class="chip">Часто берут</span></div>
+          <h3>iPhone 15</h3>
+          <p class="from num">68&nbsp;990&nbsp;₽</p>
+        </li>
+        <li class="model rv" style="--d:1">
+          <svg class="ring" aria-hidden="true"><use href="#ring"/></svg>
+          <div class="model-top"><span class="lbl">Apple</span><span class="chip">Часто берут</span></div>
+          <h3>iPhone 14 Pro Max</h3>
+          <p class="from num">76&nbsp;990&nbsp;₽</p>
+        </li>
+        <li class="model rv" style="--d:2">
+          <svg class="ring" aria-hidden="true"><use href="#ring"/></svg>
+          <div class="model-top"><span class="lbl">Apple</span><span class="chip">Часто берут</span></div>
+          <h3>iPhone 14 Pro</h3>
+          <p class="from num">72&nbsp;990&nbsp;₽</p>
+        </li>
+      </ul>
+      <ul class="list rv">
+        <li>iPhone 14<b class="num">46&nbsp;990&nbsp;₽</b></li>
+        <li>iPhone 13 Pro Max<b class="num">62&nbsp;990&nbsp;₽</b></li>
+        <li>iPhone 13 Pro<b class="num">59&nbsp;990&nbsp;₽</b></li>
+        <li>iPhone 12 Pro Max<b class="num">46&nbsp;990&nbsp;₽</b></li>
+        <li>iPhone 12 Pro<b class="num">41&nbsp;500&nbsp;₽</b></li>
+        <li>iPhone 11 Pro Max<b class="num">23&nbsp;990&nbsp;₽</b></li>
+      </ul>
+      <p class="note">Цены — с&nbsp;карточки «Apple_pro» на&nbsp;Яндекс Картах.</p>
+    </div>
+  </section>
+
+  <section class="sec band" id="why">
+    <svg class="ring" aria-hidden="true"><use href="#ring"/></svg>
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="rv">За&nbsp;что хвалят магазин</h2>
+        <p class="rv" style="--d:1">Так об&nbsp;Apple Pro пишут покупатели в&nbsp;отзывах на&nbsp;Яндекс Картах.</p>
+      </div>
+      <ol class="why">
+        <li class="rv"><span class="n">01</span><h3>Цены без накруток</h3><p>Большой выбор айфонов, цены стандартные. Без накруток и&nbsp;головной боли, как с&nbsp;перекупами.</p></li>
+        <li class="rv" style="--d:1"><span class="n">02</span><h3>Проверка по серийнику</h3><p>Телефон проверяют вместе с&nbsp;покупателем, серийные номера пробиваются на&nbsp;официальном сайте.</p></li>
+        <li class="rv" style="--d:2"><span class="n">03</span><h3>Без навязывания</h3><p>Консультант спокойно показывает модели и&nbsp;даёт подержать в&nbsp;руках, чтобы сравнить.</p></li>
+        <li class="rv" style="--d:3"><span class="n">04</span><h3>Быстро и с чеком</h3><p>Покупка занимает минут пятнадцать, чек — сразу. При получении наклеивают защитное стекло.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec" id="photos">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="rv">Из&nbsp;витрины магазина</h2>
+        <p class="rv" style="--d:1">Айфоны разных поколений и&nbsp;цветов. Фото с&nbsp;карточки магазина — на&nbsp;ней 42 снимка.</p>
+      </div>
+      <div class="gal">
+        <figure class="rv"><img src="img/05.jpg" sizes="(min-width:960px) 560px, 80vw" alt="Пять iPhone в ряд: белый, голубой, графитовый, синий и лиловый, за ними ноутбук с логотипом Apple" loading="lazy" decoding="async"></figure>
+        <figure class="rv" style="--d:1"><img src="img/03-800.jpg" alt="Три iPhone в руке: синий, белый и красный" loading="lazy" decoding="async"></figure>
+        <figure class="rv" style="--d:2"><img src="img/04-800.jpg" alt="Наушники, ноутбук, iPhone и часы Apple на сером диване" loading="lazy" decoding="async"></figure>
+        <figure class="rv" style="--d:1"><img src="img/02-800.jpg" alt="iPhone 11 Pro Max тёмно-зелёного цвета в руке" loading="lazy" decoding="async"></figure>
+        <figure class="rv" style="--d:2"><img src="img/01-800.jpg" alt="Логотип Apple Pro: фиолетовая надпись в кольце из точек" loading="lazy" decoding="async"></figure>
+      </div>
+      <div class="gal-foot">
+        <span class="lbl">Фото с карточки магазина</span>
+        <a class="link" href="https://yandex.ru/maps/org/144127283749/gallery/" target="_blank" rel="noopener">Все фото →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="reviews">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="rv">Что пишут <em>покупатели</em></h2>
+        <p class="rv" style="--d:1">Почти девятьсот оценок на&nbsp;двух картах. Ниже — пересказ отзывов с&nbsp;Яндекс Карт.</p>
+      </div>
+      <div class="rev">
+        <div class="scores rv">
+          <a class="score" href="https://yandex.ru/maps/org/144127283749/reviews/" target="_blank" rel="noopener">
+            <b>5,0</b>
+            <span class="stars" aria-label="5 из 5"><svg width="15" height="15"><use href="#star"/></svg><svg width="15" height="15"><use href="#star"/></svg><svg width="15" height="15"><use href="#star"/></svg><svg width="15" height="15"><use href="#star"/></svg><svg width="15" height="15"><use href="#star"/></svg></span>
+            <p>165 оценок,<br>156 отзывов</p>
+            <span class="src">Яндекс Карты →</span>
+          </a>
+          <a class="score" href="https://2gis.ru/firm/70000001039361774" target="_blank" rel="noopener">
+            <b>4,9</b>
+            <span class="stars" aria-label="4,9 из 5"><svg width="15" height="15"><use href="#star"/></svg><svg width="15" height="15"><use href="#star"/></svg><svg width="15" height="15"><use href="#star"/></svg><svg width="15" height="15"><use href="#star"/></svg><svg width="15" height="15"><use href="#star"/></svg></span>
+            <p>822 оценки,<br>726 отзывов</p>
+            <span class="src">2ГИС →</span>
+          </a>
+        </div>
+        <blockquote class="quote rv" style="--d:1" cite="https://yandex.ru/maps/org/144127283749/reviews/">
+          <svg width="22" height="22" aria-hidden="true"><use href="#q"/></svg>
+          <p>Пришёл менять старый iPhone&nbsp;11 и&nbsp;сомневался между моделями. Дали подержать оба аппарата, без навязывания. Взял 15&nbsp;Pro в&nbsp;отличном состоянии: ни&nbsp;царапины, аккумулятор 98%, серийник проверили вместе. Минут пятнадцать — и&nbsp;чек на&nbsp;руках.</p>
+          <small>Покупатель, июнь 2026</small>
+        </blockquote>
+        <blockquote class="quote rv" style="--d:2" cite="https://yandex.ru/maps/org/144127283749/reviews/">
+          <svg width="22" height="22" aria-hidden="true"><use href="#q"/></svg>
+          <p>Купил iPhone&nbsp;16: коробка заводская, запечатанная, все серийные номера пробиваются на&nbsp;официальном сайте. Помогли быстро проверить телефон при получении и&nbsp;наклеили защитное стекло.</p>
+          <small>Покупатель, июль 2026</small>
+        </blockquote>
+        <blockquote class="quote rv" style="--d:3" cite="https://yandex.ru/maps/org/144127283749/reviews/">
+          <svg width="22" height="22" aria-hidden="true"><use href="#q"/></svg>
+          <p>На&nbsp;первый взгляд выбор кажется небольшим, а&nbsp;на&nbsp;деле хороший, и&nbsp;цены адекватные. Всё рассказали и&nbsp;показали — ушли довольными.</p>
+          <small>Покупатели, август 2026</small>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="perks">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="rv">Оплата и&nbsp;услуги</h2>
+        <p class="rv" style="--d:1">Отметки с&nbsp;карточки магазина в&nbsp;2ГИС.</p>
+      </div>
+      <ul class="perks">
+        <li class="rv"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h3"/></svg>Оплата картой</li>
+        <li class="rv" style="--d:1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="6.5" width="19" height="11" rx="1.5"/><circle cx="12" cy="12" r="2.6"/><path d="M6 10v4M18 10v4"/></svg>Наличные</li>
+        <li class="rv" style="--d:2"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4z"/><path d="M14 14h2v2h-2zM18 14h2M14 18h2M18 18h2v2"/></svg>Оплата по QR-коду</li>
+        <li class="rv" style="--d:3"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h13l-3-3M20 15H7l3 3"/></svg>Перевод с карты</li>
+        <li class="rv"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10 12 4l9 6M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18"/></svg>Оплата через банк</li>
+        <li class="rv" style="--d:1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>Доставка</li>
+        <li class="rv" style="--d:2"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>Аксессуары к&nbsp;телефонам</li>
+        <li class="rv" style="--d:3"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0 5 5l-8.9 8.9a2.1 2.1 0 0 1-3-3z"/><path d="M14.7 6.3 17 4l3 3-2.3 2.3"/></svg>Ремонт телефонов</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" id="contacts">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="rv">Как добраться</h2>
+        <p class="rv" style="--d:1">Перед визитом лучше позвонить — уточнить, есть ли нужная модель, память и&nbsp;цвет.</p>
+      </div>
+      <div class="contact">
+        <div class="c-main rv">
+          <span class="lbl">Адрес</span>
+          <address>Иркутск, улица Степана Разина,&nbsp;5</address>
+          <p class="c-sub">2 этаж, офис 201</p>
+          <div class="c-row"><a href="tel:+79501031634">+7 (950) 103-16-34</a><span>телефон</span></div>
+          <div class="c-row"><a href="tel:+79149241130">+7 (914) 924-11-30</a><span>телефон</span></div>
+          <div class="c-row"><a href="tel:+79501155083">+7 (950) 115-50-83</a><span>телефон</span></div>
+          <div class="c-row"><b style="font-weight:600;display:flex;align-items:center;gap:8px;white-space:nowrap"><span class="dot" data-dot></span>Ежедневно 10:00–20:00</b><span data-status-long>часы работы</span></div>
+          <div class="c-btns">
+            <a class="btn btn-p" href="https://yandex.ru/maps/?rtext=~52.286481,104.272938" target="_blank" rel="noopener">Построить маршрут</a>
+            <a class="btn btn-g" href="https://yandex.ru/maps/org/144127283749" target="_blank" rel="noopener">Яндекс Карты</a>
+            <a class="btn btn-g" href="https://2gis.ru/firm/70000001039361774" target="_blank" rel="noopener">2ГИС</a>
+          </div>
+          <div class="c-door">
+            <img src="img/08-800.jpg" alt="Вход в здание: наружная металлическая лестница под навесом" loading="lazy" decoding="async">
+            <p><b>Второй этаж, офис 201</b><br>Так вход выглядит на&nbsp;фото с&nbsp;карточки магазина.</p>
+          </div>
+        </div>
+        <div class="map rv" style="--d:1">
+          <iframe src="https://yandex.ru/map-widget/v1/?ll=104.272938,52.286481&amp;z=16&amp;pt=104.272938,52.286481,pm2vvm" title="Apple Pro на карте" loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
-<footer><div class="wrap"><div class="cols">
-<div><b>Apple_pro</b><p>Иркутск, улица Степана Разина, 5</p><p><a href="tel:+79501031634">+7 (950) 103-16-34</a></p><p>Ежедневно, 10:00–20:00</p></div>
-<div><b>Разделы</b><ul><li><a href="index.html">Главная</a></li><li><a href="catalog.html">Каталог</a></li><li><a href="index.html#reviews">Отзывы</a></li><li><a href="contacts.html">Контакты</a></li></ul></div>
 
+<footer class="foot">
+  <div class="wrap">
+    <a class="logo" href="#main" aria-label="Apple Pro — наверх">
+      <svg width="36" height="36" aria-hidden="true"><use href="#ring-s"/></svg>
+      <div><b>Apple Pro</b><span>iPhone · Иркутск</span></div>
+    </a>
+    <p><b style="color:var(--on-night)">Демо-концепт, не официальный сайт, удалим по первой просьбе.</b> Все данные — с карточек «Apple_pro» на <a href="https://yandex.ru/maps/org/144127283749" target="_blank" rel="noopener">Яндекс Картах</a> и в <a href="https://2gis.ru/firm/70000001039361774" target="_blank" rel="noopener">2ГИС</a>: адрес, телефоны, часы, цены, фото и отзывы (отзывы пересказаны). Цены и наличие могут измениться.</p>
+  </div>
+</footer>
+
+<div class="dock" id="dock">
+  <a class="btn btn-p" href="tel:+79501031634">Позвонить</a>
+  <a class="btn btn-g" href="https://yandex.ru/maps/?rtext=~52.286481,104.272938" target="_blank" rel="noopener">Маршрут</a>
 </div>
-<div class="demo-note"><p><strong>Демо-концепт, не официальный сайт, удалим по первой просьбе.</strong></p><p>Все данные — с карточки «Apple_pro» на <a href="https://yandex.ru/maps/org/144127283749" rel="noopener">Яндекс Картах</a> и в <a href="https://2gis.ru/firm/70000001039361774" rel="noopener">2ГИС</a>. Цены и наличие могут измениться. Изображения товаров условные.</p></div>
-</div></footer>
-<nav class="tabs" aria-label="Быстрые действия"><a href="index.html" aria-current="page"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7v9h-5v-5h-6v5H4z"/></svg>Главная</a><a href="catalog.html"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></svg>Каталог</a><button type="button" data-list><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Список<span class="badge" data-count hidden></span></button><a href="contacts.html"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>Контакты</a><a class="acc" href="tel:+79501031634"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Позвонить</a></nav>
-<dialog class="sheet" id="sheet" aria-labelledby="sheet-h"><div class="in">
-<div class="top"><h2 id="sheet-h">Список покупок</h2><button type="button" class="ibtn" data-close aria-label="Закрыть"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
-<div class="scroll"><p class="empty" id="empty">Пока пусто. Нажмите «В список» у товара — соберёте, что хотите купить, и одним сообщением уточните наличие.</p><ul id="items"></ul></div>
-<div class="foot need" hidden><p class="sum">Сумма по ценам с карточки <b id="sum"></b></p>
 
-<button type="button" class="btn primary" id="copy">Скопировать список</button>
-<a class="btn" href="tel:+79501031634">Позвонить +7 (950) 103-16-34</a>
-<small>Цены взяты с карточки магазина на Яндекс Картах. Наличие и точную цену подтвердит магазин.</small></div></div></dialog>
-<script>(function(){
-var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
-var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
-var rub=function(n){return Math.round(n).toLocaleString('ru-RU').replace(/\s/g,' ')+' ₽'};
-var norm=function(s){return s.toLowerCase().replace(/ё/g,'е')};
-var B=document.body,KEY='list:'+B.dataset.slug,list={},sheet=$('#sheet');
-try{list=JSON.parse(localStorage.getItem(KEY))||{}}catch(e){}
-function msg(){return 'Здравствуйте! Нашёл(ла) вас на картах. Подскажите, есть ли в наличии:\n'+Object.keys(list).map(function(k){var x=list[k];return '— '+x.n+(x.q>1?' × '+x.q:'')+' ('+rub(x.p*x.q)+')'}).join('\n')}
-function render(){
-  var ids=Object.keys(list),cnt=0,sum=0;ids.forEach(function(k){cnt+=list[k].q;sum+=list[k].p*list[k].q});
-  $$('[data-count]').forEach(function(e){e.textContent=cnt;e.hidden=!cnt});
-  $$('[data-add]').forEach(function(b){var on=!!list[b.dataset.add];b.classList.toggle('on',on);b.setAttribute('aria-pressed',on);b.textContent=on?'В списке ✓':'В список'});
-  if(!sheet)return;
-  $('#items').innerHTML=ids.map(function(k){var x=list[k];return '<li><span>'+esc(x.n)+'</span><b>'+rub(x.p*x.q)+'</b><div class="qty"><button type="button" data-k="'+esc(k)+'" data-q="-1" aria-label="Убрать одну">−</button><output>'+x.q+'</output><button type="button" data-k="'+esc(k)+'" data-q="1" aria-label="Добавить ещё">+</button></div></li>'}).join('');
-  $('#empty').hidden=!!ids.length;$$('.need').forEach(function(e){e.hidden=!ids.length});$('#sum').textContent=rub(sum);
-  var s=$('#send');if(s)s.href=B.dataset.wa+'?text='+encodeURIComponent(msg());
-}
-function save(){try{localStorage.setItem(KEY,JSON.stringify(list))}catch(e){}render()}
-document.addEventListener('click',function(e){
-  var t=e.target,a=t.closest('[data-add]'),q=t.closest('[data-q]'),c=t.closest('#copy');
-  if(a){var k=a.dataset.add;if(list[k])delete list[k];else list[k]={n:a.dataset.n,p:+a.dataset.p,q:1};save()}
-  else if(q){var x=list[q.dataset.k];if(x){x.q+=+q.dataset.q;if(x.q<1)delete list[q.dataset.k];save()}}
-  else if(c){if(navigator.clipboard)navigator.clipboard.writeText(msg()).then(function(){c.textContent='Скопировано — вставьте в чат';setTimeout(function(){c.textContent='Скопировать список'},2500)})}
-  else if(t.closest('[data-list]')&&sheet){e.preventDefault();sheet.showModal()}
-  else if(sheet&&(t.closest('[data-close]')||t===sheet))sheet.close();
-});
-render();
-var grid=$('#grid');
-if(grid){
-  var cards=$$('.card',grid),q=$('#q'),sel=$('#sort'),out=$('#found'),none=$('#none'),u=new URLSearchParams(location.search),st={t:u.get('t')||'',b:u.get('b')||''};
-  if(q&&u.get('q'))q.value=u.get('q');if(sel&&u.get('sort'))sel.value=u.get('sort');
-  var apply=function(){
-    var v=q?q.value.trim():'',w=norm(v).split(/\s+/).filter(Boolean),m=sel?sel.value:'',n=0;
-    cards.forEach(function(c){var ok=(!st.t||c.dataset.t===st.t)&&(!st.b||c.dataset.b===st.b)&&w.every(function(x){return c.dataset.s.indexOf(x)>-1});c.hidden=!ok;if(ok)n++});
-    cards.slice().sort(function(a,b){return m==='asc'?a.dataset.p-b.dataset.p:m==='desc'?b.dataset.p-a.dataset.p:a.dataset.i-b.dataset.i}).forEach(function(c){grid.appendChild(c)});
-    $$('.chips [data-f]').forEach(function(b){b.setAttribute('aria-pressed',st[b.dataset.f]===b.dataset.v)});
-    if(out)out.textContent='Показано: '+n;if(none)none.hidden=!!n;
-    var p=new URLSearchParams();if(st.t)p.set('t',st.t);if(st.b)p.set('b',st.b);if(v)p.set('q',v);if(m)p.set('sort',m);
-    try{history.replaceState(null,'',p.toString()?'?'+p:location.pathname)}catch(e){}
-  };
-  document.addEventListener('click',function(e){var b=e.target.closest('.chips [data-f]');if(b){st[b.dataset.f]=b.dataset.v;apply()}var r=e.target.closest('#reset');if(r){st.t=st.b='';if(q)q.value='';apply()}});
-  if(q){q.addEventListener('input',apply);q.form&&q.form.addEventListener('submit',function(e){e.preventDefault();q.blur()})}
-  if(sel)sel.addEventListener('change',apply);apply();
-}
-var d=new Date(),i=(d.getDay()+6)%7,row=$('.hours tr[data-d="'+i+'"]'),s=$('#status');
-if(row){row.className='today';if(s){var h=row.dataset.h;if(!h){s.dataset.open='0';s.textContent='Сегодня выходной'}else{
-  var m=d.getHours()*60+d.getMinutes(),min=function(t){var p=t.split(':');return p[0]*60+ +p[1]};
-  var iv=h.split(/,\s*/).map(function(p){return p.split('-')}),on=iv.filter(function(x){var a=min(x[0]),b=min(x[1]);return b>a?m>=a&&m<b:m>=a||m<b})[0],nx=iv.filter(function(x){return min(x[0])>m})[0];
-  s.dataset.open=on?'1':'0';s.textContent=on?'Открыто до '+on[1]:nx?'Откроется в '+nx[0]:'Сейчас закрыто'}}}
-})();</script></body></html>
+<script>
+(function(){
+  // часы работы по Иркутску: ежедневно 10:00–20:00
+  var p=new Intl.DateTimeFormat('ru-RU',{timeZone:'Asia/Irkutsk',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date());
+  var h=+p.find(function(x){return x.type==='hour'}).value, m=+p.find(function(x){return x.type==='minute'}).value, t=h*60+m;
+  var open=t>=600&&t<1200;
+  document.querySelectorAll('[data-dot]').forEach(function(d){d.classList.toggle('on',open)});
+  var s=document.querySelector('[data-status]'); if(s) s.textContent=open?'Открыто до 20:00':'Откроется в 10:00';
+  var sl=document.querySelector('[data-status-long]'); if(sl) sl.textContent=open?'сейчас открыто':'сейчас закрыто';
+  // шапка и нижняя панель
+  var top=document.getElementById('top'), dock=document.getElementById('dock'), hero=document.querySelector('.hero');
+  function onScroll(){var y=window.scrollY;top.classList.toggle('is-stuck',y>8);dock.classList.toggle('show',y>hero.offsetHeight-120)}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  // появление блоков
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
